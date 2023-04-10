@@ -685,7 +685,7 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
     min-width: 408px;
     height: 576px;
     padding: 15px;
-    background: #FCFCFC;
+    background:  #FFFFFF;;
     border: none;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -702,7 +702,7 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
     right: 24px;
     width: 24px;
     height: 24px;
-    background: #E7E9FC;
+    background-color: #E7E9FC;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1); 
     transition: background-color var(--time-transition-duration) var(--transition-timing-function);
@@ -718,14 +718,11 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
     transform: translate(-50%, -50%) scale(1.2);
 }
 
-.modal-close-icons {
-    fill: var(--main-background-color);
-    transition: color var(--time-transition-duration) var(--transition-timing-function);
+.modal-close-icons {    
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: var(--hover-color);
     fill: var(--main-background-color);
-    
 }
