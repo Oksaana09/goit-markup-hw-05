@@ -400,14 +400,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color, color var(--time-transition-duration) 
-                                        var(--transition-timing-function);
+    transition: background-color var(--time-transition-duration) var(--transition-timing-function); 
+                
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
     background-color: #404BBF;
-    color: #404BBF;
 }
 
 .team-soc-icon {}
@@ -453,8 +452,8 @@ body {
     border: 1px solid #8E8F99;
     border-radius: 4px;
     color: #8E8F99;
-    transition: border-color, color var(--time-transition-duration) 
-                                    var(--transition-timing-function);
+    transition: border-color var(--time-transition-duration) var(--transition-timing-function), 
+                color var(--time-transition-duration) var(--transition-timing-function);
 }
 
 
@@ -540,8 +539,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color, color var(--time-transition-duration) 
-                                        var(--transition-timing-function);
+    transition: background-color var(--time-transition-duration) var(--transition-timing-function), 
+                color var(--time-transition-duration) var(--transition-timing-function);
 }
 
 .footer-item-link:hover,
@@ -584,8 +583,10 @@ body {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
-    transition: background-color, color, box-shadow  var(--time-transition-duration) 
-                                                     var(--transition-timing-function);
+    transition: background-color var(--time-transition-duration) var(--transition-timing-function), 
+                color var(--time-transition-duration) var(--transition-timing-function), 
+                box-shadow  var(--time-transition-duration) var(--transition-timing-function),
+                border-color var(--time-transition-duration) var(--transition-timing-function);
 }    
 
 .filter-btn-text:hover,
@@ -679,8 +680,8 @@ transition-property: box-shadow;
     height: 100%;
     background: rgba(46, 47, 66, 0.4);
     opacity: 1;
-    transition: opacity 250ms linear, 
-                visibility 250ms linear ;
+    transition: opacity var(--time-transition-duration) var(--transition-timing-function),
+                visibility var(--time-transition-duration) var(--transition-timing-function);
 }
 
 .modal { 
@@ -712,8 +713,8 @@ transition-property: box-shadow;
     background-color: #E7E9FC;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1); 
-    transition: background-color, fill var(--time-transition-duration) 
-                                       var(--transition-timing-function);
+    transition: background-color var(--time-transition-duration) var(--transition-timing-function),
+                fill var(--time-transition-duration) var(--transition-timing-function);
 }
 
 .is-hidden {
