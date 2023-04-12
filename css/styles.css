@@ -133,6 +133,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--logo-color);
+    transition: color var(--time-transition-duration) 
+                      var(--transition-timing-function);
 }
 
 .link-header:hover {
@@ -145,13 +147,15 @@ body {
 
 .curent {
     position: relative;
+    color:#404BBF ;
 }
 
 .curent::after {
     content: "";
+    display: block;
     position: absolute;
     left: 0;
-    top: 44px;
+    top: 45px;
     width: 100%;
     height: 4px;
     background: #404BBF;
@@ -168,7 +172,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-
+    transition: color var(--time-transition-duration) 
+                      var(--transition-timing-function);
 }
 
 .contact-link:hover {
@@ -225,6 +230,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-top: 48px;
+    transition: background-color var(--time-transition-duration) var(--transition-timing-function);
 }
 
 .hero-btn:hover {
@@ -394,6 +400,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color, color var(--time-transition-duration) 
+                                        var(--transition-timing-function);
 }
 
 .team-soc-link:hover,
@@ -445,12 +453,10 @@ body {
     border: 1px solid #8E8F99;
     border-radius: 4px;
     color: #8E8F99;
-    transition: border-color var(--time-transition-duration) var(--transition-timing-function);
+    transition: border-color, color var(--time-transition-duration) 
+                                    var(--transition-timing-function);
 }
 
-.customers-item-link {
-transition: color var(--time-transition-duration) var(--transition-timing-function);
-}
 
 .customers-soc-icon {
     fill: currentColor;
@@ -534,6 +540,8 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color, color var(--time-transition-duration) 
+                                        var(--transition-timing-function);
 }
 
 .footer-item-link:hover,
@@ -573,12 +581,12 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
     letter-spacing: 0.04em;
     color: var(--second-color);
     background-color: var(--light-color);
-    flex-direction: row;
-    justify-content: center;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
-}
+    transition: background-color, color, box-shadow  var(--time-transition-duration) 
+                                                     var(--transition-timing-function);
+}    
 
 .filter-btn-text:hover,
 .filter-btn-text:focus {
@@ -602,20 +610,18 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
 }
 
 .gallery-card {
-    border: 1px solid var(--color-accent-text);
+    border: 1px solid #E7E9FC;
     border-top: none;
     padding: 32px 16px;
 }
 
 .galeri-link {
-    transition-property: color,
-    border-color,
-    box-shadow;
+transition-property: box-shadow;
     transition-duration: var(--time-transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
 
- .galeri-link:hover,
+.galeri-link:hover,
 .galeri-link:focus {
     border-color: var(--light-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -652,7 +658,8 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
     padding: 40px;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms linear;
+    transition: transform var(--time-transition-duration) 
+                          var(--transition-timing-function);
 }
 
 .gallery-top-wrap {
@@ -705,7 +712,8 @@ transition: color var(--time-transition-duration) var(--transition-timing-functi
     background-color: #E7E9FC;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1); 
-    transition: background-color var(--time-transition-duration) var(--transition-timing-function);
+    transition: background-color, fill var(--time-transition-duration) 
+                                       var(--transition-timing-function);
 }
 
 .is-hidden {
